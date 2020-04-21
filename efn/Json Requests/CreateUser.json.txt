@@ -1,0 +1,9 @@
+{
+  "UserName": "test_user",
+  "Password": "test1234",
+  "UsersTotalProductQuantity": 2500,
+  "Id": 0,//Auto generated
+  "Name": "Test-user",
+  "CreateDate": "2020-04-21T07:42:27.467Z",
+  "UpdateDate": "2020-04-21T07:42:27.467Z"
+}

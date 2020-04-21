@@ -1,0 +1,7 @@
+{
+  "PricePerGram": 4500,
+  "Id": 0,//Auto generated
+  "Name": "Gold",
+  "CreateDate": "2020-04-21T07:42:27.335Z",
+  "UpdateDate": "2020-04-21T07:42:27.335Z"
+}

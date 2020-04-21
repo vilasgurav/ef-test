@@ -1,0 +1,11 @@
+{
+  "PurchasedTransactionId": 0,//Auto generated
+  "UserId": 1,
+  "PurchasedRatePerGram": 4500,
+  "PurchasedDate": "2020-04-21T07:42:27.413Z",
+  "PurchasedQuantity": 2,
+  "PurchasedPrice": 9000,
+  "PurchasedTax": 0,//Calculate in code
+  "PurchasedTotalPrice": 0,//Calculated in code
+  "ProductId": 1
+}
