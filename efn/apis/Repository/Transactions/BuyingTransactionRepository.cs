@@ -7,7 +7,7 @@ namespace Repository.Transactions
 {
 
     /// <summary>
-    /// The repository to process buying transactions.
+    /// The repository to process buying transaction.
     /// </summary>
     public class BuyingTransactionRepository : IBuyingTransactionRepository
     {
