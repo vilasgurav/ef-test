@@ -33,11 +33,11 @@ namespace Repository.Transactions
                 PurchasedPrice = buyingTransaction.PurchasedPrice,
                 PurchasedQuantity = buyingTransaction.PurchasedQuantity,
                 PurchasedRatePerGram = buyingTransaction.PurchasedRatePerGram,
-                PurchasedTax = buyingTransaction.PurchasedTax,
-                PurchasedTotalPrice = buyingTransaction.PurchasedTotalPrice,
+
+                PurchasedTax = (decimal)((buyingTransaction.PurchasedPrice * DomainConstants.GST_PERCENTAGE) / 100),
+                PurchasedTotalPrice = (decimal)(buyingTransaction.PurchasedPrice + ((buyingTransaction.PurchasedPrice * DomainConstants.GST_PERCENTAGE) / 100)),
                 UserId = buyingTransaction.UserId,
-
-
+                PurchasedTransactionId = buyingTransaction.PurchasedTransactionId
             };
         }
 
@@ -64,8 +64,8 @@ namespace Repository.Transactions
                 PurchasedPrice = (decimal)data.PurchasedPrice,
                 PurchasedQuantity = (decimal)data.PurchasedQuantity,
                 PurchasedRatePerGram = (decimal)data.PurchasedRatePerGram,
-                PurchasedTax = (decimal)(data.PurchasedPrice * DomainConstants.GST_PERCENTAGE / 100),
-                PurchasedTotalPrice = (decimal)(data.PurchasedPrice + (data.PurchasedPrice * DomainConstants.GST_PERCENTAGE / 100)),
+                PurchasedTax = (decimal)data.PurchasedTax,
+                PurchasedTotalPrice = (decimal)data.PurchasedTotalPrice,
                 PurchasedTransactionId = (long)data.PurchasedTransactionId,
                 UserId = (int)data.UserId,
             };

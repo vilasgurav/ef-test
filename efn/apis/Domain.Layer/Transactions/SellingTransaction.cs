@@ -35,7 +35,7 @@ namespace Domain.Layer.Transactions
         /// <returns></returns>
         private decimal CalculatePurchasedPricePerGram(decimal purchasedRatePerGram)
         {
-            return purchasedRatePerGram + ((purchasedRatePerGram * DomainConstants.GST_PERCENTAGE) / 100);
+            return purchasedRatePerGram + DomainConstants.COMMISSION_PER_GRAM + ((purchasedRatePerGram * DomainConstants.GST_PERCENTAGE) / 100);
         }
 
         /// <summary>

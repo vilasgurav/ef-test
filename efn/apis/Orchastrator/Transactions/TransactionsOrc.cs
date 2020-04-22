@@ -59,7 +59,7 @@ namespace Orchastrator.Transactions
                     //Hard coded the product since we have only oone product with ID as 1 now.
                     if (CurrentGoldPricePerGram.Instance.currentGoldPricePerGram == null)
                     {
-                        CurrentGoldPricePerGram.Instance.currentGoldPricePerGram = productRep.GetProduct(1).PricePerGram;
+                        CurrentGoldPricePerGram.Instance.currentGoldPricePerGram = productRep.GetProduct(buyingTransaction.ProductId).PricePerGram;
                     }
                     sellingTransaction = new SellingTransaction();
                     return sellingTransaction.GetProfitOrLoss(buyingTransaction);

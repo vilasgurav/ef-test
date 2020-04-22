@@ -21,7 +21,7 @@ namespace Repository
             var data = dbContext.Products
                                   .Where(s => s.Id == Id)
                                   .FirstOrDefault();
-            return MapRepToDomainProduct(data);
+            return data != null ? MapRepToDomainProduct(data) : null;
         }
 
 
